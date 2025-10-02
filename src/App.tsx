@@ -8,6 +8,7 @@ import EstoqueTI from "./pages/EstoqueTI";
 import Movimentados from "./pages/Movimentados";
 import Comodato from "./pages/Comodato";
 import Dashboard from "./pages/Dashboard";
+import Configuracoes from "./pages/Configuracoes";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/movimentados" element={<Movimentados />} />
           <Route path="/comodato" element={<Comodato />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/configuracoes" element={<Configuracoes />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
